@@ -2,10 +2,11 @@
   "name": "mini-ecommerce-reto",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint --ignore-path .eslintignore --ext .js,.jsx,.ts,.tsx .",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "preview": "vite preview",
     "prepare": "husky install"

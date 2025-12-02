@@ -1,4 +1,7 @@
+@use "../theme/colors";
+@use "../theme/typografy";
 
+@use "sass:map";
 *, *::after, *::before {
 	box-sizing: border-box;
 	padding: 0;
@@ -7,34 +10,32 @@
 
 :root {
 
-  --bg-body: #{map-get($app-color, body )};
-	--bg-container: #{map-get($app-color, container )};
-	--title-color: #{map-get($app-color, title )};
-	--content-color: #{map-get($app-color, content )};
-	--auxiliary-color: #{map-get($app-color, auxiliary )};
-	--bg-overlay-section: #{map-get($util-color, bg-overlay-section-dark )};
-  --bg-overlay-image: #{map-get($util-color, bg-overlay-image )};
-	--border-color: #{map-get($util-color, border )};
+  --bg-body: #{map.get(colors.$app-color, body )};
+	--bg-container: #{map.get(colors.$app-color, container )};
+	--title-color: #{map.get(colors.$app-color, title )};
+	--content-color: #{map.get(colors.$app-color, content )};
+	--auxiliary-color: #{map.get(colors.$app-color, auxiliary )};
+	--border-color: #{map.get(colors.$util-color, border )};
 	--box-shadow: none;
 
-	--main-font: #{map-get($type-font, main-font )};
-	--secondary-font: #{map-get($type-font, secondary-font )};
+	--main-font: #{map.get(typografy.$type-font, main-font )};
+	--secondary-font: #{map.get(typografy.$type-font, secondary-font )};
 
-	--primary-color: #{map-get($button-color, primary )};
-	--primary-alt-color: #{map-get($button-color, primary-alt )};
+	--primary-color: #{map.get(colors.$button-color, primary )};
+	--primary-alt-color: #{map.get(colors.$button-color, primary-alt )};
 
-	--success-200: #{map-get($accent-color, success-200 )};
-	--success-400: #{map-get($accent-color, success-400 )};
-	--success-500: #{map-get($accent-color, success-500 )};
-	--success-700: #{map-get($accent-color, success-700 )};
-	--warning-200: #{map-get($accent-color, warning-200 )};
-	--warning-400: #{map-get($accent-color, warning-400 )};
-	--warning-500: #{map-get($accent-color, warning-500 )};
-	--warning-700: #{map-get($accent-color, warning-700 )};
-	--error-200: #{map-get($accent-color, error-200 )};
-	--error-400: #{map-get($accent-color, error-400 )};
-	--error-500: #{map-get($accent-color, error-500 )};
-	--error-700: #{map-get($accent-color, error-700 )};
+	--success-200: #{map.get(colors.$accent-color, success-200 )};
+	--success-400: #{map.get(colors.$accent-color, success-400 )};
+	--success-500: #{map.get(colors.$accent-color, success-500 )};
+	--success-700: #{map.get(colors.$accent-color, success-700 )};
+	--warning-200: #{map.get(colors.$accent-color, warning-200 )};
+	--warning-400: #{map.get(colors.$accent-color, warning-400 )};
+	--warning-500: #{map.get(colors.$accent-color, warning-500 )};
+	--warning-700: #{map.get(colors.$accent-color, warning-700 )};
+	--error-200: #{map.get(colors.$accent-color, error-200 )};
+	--error-400: #{map.get(colors.$accent-color, error-400 )};
+	--error-500: #{map.get(colors.$accent-color, error-500 )};
+	--error-700: #{map.get(colors.$accent-color, error-700 )};
 
 	--z-normal: 1;
 	--z-fixed: 100;
@@ -42,7 +43,7 @@
 }
 
 html {
-	font-size: #{map-get($web-fz, normal )};
+	font-size: #{map.get(typografy.$web-fz, normal )};
 	font-family: var(--main-font);
 	line-height: 1.6;
 }
@@ -55,44 +56,44 @@ body {
 }
 
 h1 {
-	font-size: #{map-get($mobile-fz, title )};
+	font-size: #{map.get(typografy.$mobile-fz, title )};
   @media screen and (min-width: 768px) {
-    font-size: #{map-get($web-fz, title )};
+    font-size: #{map.get(typografy.$web-fz, title )};
   }
 }
 
 h2 {
-	font-size: #{map-get($mobile-fz, subtitle )};
+	font-size: #{map.get(typografy.$mobile-fz, subtitle )};
 	@media screen and (min-width: 768px) {
-		font-size: #{map-get($web-fz, subtitle )};
+		font-size: #{map.get(typografy.$web-fz, subtitle )};
 	}
 }
 
 h3, p {
-	font-size: #{map-get($mobile-fz, content )};
+	font-size: #{map.get(typografy.$mobile-fz, content )};
 	@media screen and (min-width: 768px) {
-		font-size: #{map-get($web-fz, content )};
+		font-size: #{map.get(typografy.$web-fz, content )};
 	}
 }
 
 h4 {
-	font-size: #{map-get($mobile-fz, normal )};
+	font-size: #{map.get(typografy.$mobile-fz, normal )};
 	@media screen and (min-width: 768px) {
-		font-size: #{map-get($web-fz, normal )};
+		font-size: #{map.get(typografy.$web-fz, normal )};
 	}
 }
 
 h5, small {
-	font-size: #{map-get($mobile-fz, small )};
+	font-size: #{map.get(typografy.$mobile-fz, small )};
 	@media screen and (min-width: 768px) {
-		font-size: #{map-get($web-fz, small )};
+		font-size: #{map.get(typografy.$web-fz, small )};
 	}
 }
 
 h6 {
-	font-size: #{map-get($mobile-fz, smaller )};
+	font-size: #{map.get(typografy.$mobile-fz, smaller )};
 	@media screen and (min-width: 768px) {
-		font-size: #{map-get($web-fz, smaller )};
+		font-size: #{map.get(typografy.$web-fz, smaller )};
 	}
 }
 

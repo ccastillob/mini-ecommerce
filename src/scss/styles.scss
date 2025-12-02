@@ -1,12 +1,12 @@
-@import "config";
+@use "config";
 
-@import "base/base";
+@use "base/base";
 
-@import "components/ui/card";
-@import "components/ui/navbar";
-@import "components/ui/sidebar";
+@use "components/ui/card";
+@use "components/ui/navbar";
+@use "components/ui/sidebar";
 
-@import "screens/cart";
-@import "screens/checkout";
-@import "screens/home";
-@import "screens/notfound";
+@use "screens/cart";
+@use "screens/checkout";
+@use "screens/home";
+@use "screens/notfound";

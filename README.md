@@ -26,10 +26,16 @@ npm install
 npm run dev
 ```
 
-### 4. Visualización de la aplicación
+### Documentación
 
-- Dentro de tu navegador ingresa la siguiente url:
+- Implementar husky + Lint Staged + Commitlint + Conventional Commits
+https://gist.github.com/ccastillob/00f6414d78310210802e1ef1ed78e1b5
 
-```
-http://localhost:5173
-```
+- Implementar CSS pre-procesador
+https://vite.dev/guide/features.html#css-pre-processors
+
+- Implementar fonts
+https://fonts.google.com/
+
+- Sass Migration
+https://sass-lang.com/documentation/breaking-changes/import/

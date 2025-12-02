@@ -1,0 +1,118 @@
+.navbar {
+  background-color: var(--bg-container);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-fixed);
+  padding: 1rem 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: var(--title-color);
+    transition: color 0.3s ease;
+
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    position: relative;
+    color: var(--content-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      color: var(--title-color);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    &--active {
+      color: var(--primary-color);
+      background-color: rgba(0, 128, 202, 0.1);
+      font-weight: 600;
+
+      &:hover {
+        background-color: rgba(0, 128, 202, 0.15);
+      }
+    }
+  }
+
+  &__badge {
+    background-color: var(--primary-color);
+    color: var(--title-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__container {
+      padding: 0 1rem;
+    }
+
+    &__logo h2 {
+      font-size: 1.25rem;
+    }
+
+    &__menu {
+      gap: 1rem;
+    }
+
+    &__link {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__logo h2 {
+      font-size: 1rem;
+    }
+
+    &__menu {
+      gap: 0.5rem;
+    }
+
+    &__link {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
+    }
+  }
+}

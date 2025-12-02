@@ -115,3 +115,22 @@ li {
 	list-style: none;
 	text-decoration: none;
 }
+
+.app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: var(--content-color);
+}
+
+.main-content {
+	flex: 1;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+
+	@media screen and (max-width: 768px) {
+		padding: 1.5rem 1rem;
+	}
+}

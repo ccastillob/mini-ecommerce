@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useCart } from "../../../hooks/useCart";
 
 export const Navbar = () => {
   const location = useLocation();
+  const { state } = useCart();
 
   return (
     <nav className="navbar">
@@ -25,7 +27,9 @@ export const Navbar = () => {
               className={`navbar__link ${location.pathname === "/cart" ? "navbar__link--active" : ""}`}
             >
               Carrito
-              <span className="navbar__badge">0</span>
+              {state.totalItems > 0 && (
+                <span className="navbar__badge">{state.totalItems}</span>
+              )}
             </Link>
           </li>
         </ul>

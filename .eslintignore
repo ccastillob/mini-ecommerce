@@ -1,0 +1,7 @@
+node_modules/
+dist/
+src/vite-env.d.ts
+vite.config.ts
+commitlint.config.js
+jest.setup.js
+custom.setup.js

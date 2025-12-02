@@ -34,6 +34,14 @@ npm run dev
 http://localhost:5173
 ```
 
+### 5. Demo de la aplicación
+
+- Para ver el demo de la aplicación ingresa la siguiente url:
+
+```
+https://mini-ecommerce-eosin.vercel.app/
+```
+
 ### Documentación
 
 - Implementar husky + Lint Staged + Commitlint + Conventional Commits

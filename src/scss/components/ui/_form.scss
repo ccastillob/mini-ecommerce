@@ -1,0 +1,99 @@
+.checkout-form {
+  background-color: var(--bg-container);
+  border-radius: 12px;
+  padding: 2rem;
+
+  &__title {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &--full {
+      width: 100%;
+    }
+
+    &--half {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 1rem;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  &__label {
+    color: var(--content-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.875rem 1rem;
+    color: var(--title-color);
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: var(--auxiliary-color);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      background-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(0, 128, 202, 0.1);
+    }
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+
+  &__button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: var(--primary-alt-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 128, 202, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

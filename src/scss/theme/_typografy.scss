@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@700&display=swap');
+
+$type-font: (
+	main-font: ('Ubuntu', sans-serif),
+	secondary-font: ('Oxygen', sans-serif),
+);
+
+$web-fz: (
+	title: 36px,
+	subtitle: 28px,
+	content: 20px,
+	normal: 16px,
+	small: 14px,
+	smaller: 13px
+);
+
+$mobile-fz: (
+	title: 24px,
+	subtitle: 20px,
+	content: 16px,
+	normal: 14px,
+	small: 13px,
+	smaller: 12px
+);

@@ -26,6 +26,14 @@ npm install
 npm run dev
 ```
 
+### 4. Visualización de la aplicación
+
+- Dentro de tu navegador ingresa la siguiente url:
+
+```
+http://localhost:5173
+```
+
 ### Documentación
 
 - Implementar husky + Lint Staged + Commitlint + Conventional Commits

@@ -2,11 +2,13 @@
 
 @use "base/base";
 
-@use "components/ui/card";
 @use "components/ui/navbar";
+@use "components/ui/card";
 @use "components/ui/sidebar";
+@use "components/ui/item";
+@use "components/ui/form";
 
+@use "screens/home";
 @use "screens/cart";
 @use "screens/checkout";
-@use "screens/home";
 @use "screens/notfound";

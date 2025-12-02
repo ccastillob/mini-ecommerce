@@ -1,17 +1,22 @@
-import { useReducer } from "react";
+import { useReducer, useEffect } from "react";
 import type { ReactNode } from "react";
 import type { Product } from "../types";
 import { CartContext } from "./CartContext";
 import type { CartContextType } from "./CartContext";
-import { cartReducer, initialCartState } from "./cartReducer";
+import { cartReducer } from "./cartReducer";
 import { CartActionType } from "../types";
+import { loadCartFromStorage, saveCartToStorage, clearCartFromStorage } from "./cartStorage";
 
 interface CartProviderProps {
   children: ReactNode;
 }
 
 export const CartProvider = ({ children }: CartProviderProps) => {
-  const [state, dispatch] = useReducer(cartReducer, initialCartState);
+  const [state, dispatch] = useReducer(cartReducer, loadCartFromStorage());
+
+  useEffect(() => {
+    saveCartToStorage(state);
+  }, [state]);
 
   const addToCart = (product: Product) => {
     dispatch({
@@ -38,6 +43,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     dispatch({
       type: CartActionType.CLEAR_CART,
     });
+    clearCartFromStorage();
   };
 
   const value: CartContextType = {

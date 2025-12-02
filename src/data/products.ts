@@ -1,0 +1,68 @@
+import type { Product } from "../types";
+
+export const productsData: Product[] = [
+  {
+    id: 1,
+    name: "Laptop Dell XPS 13",
+    price: 1299.99,
+    image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500",
+    description: "Portátil ultradelgada con procesador Intel Core i7 de última generación",
+    category: "Electrónica",
+  },
+  {
+    id: 2,
+    name: "iPhone 14 Pro",
+    price: 999.99,
+    image: "https://images.unsplash.com/photo-1678652197831-2d180705cd2c?w=500",
+    description: "Smartphone con chip A16 Bionic y cámara profesional de 48MP",
+    category: "Electrónica",
+  },
+  {
+    id: 3,
+    name: "Sony WH-1000XM5",
+    price: 399.99,
+    image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=500",
+    description: "Auriculares con cancelación de ruido líder en la industria",
+    category: "Audio",
+  },
+  {
+    id: 4,
+    name: "iPad Air",
+    price: 599.99,
+    image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
+    description: "Tablet con chip M1 y pantalla Liquid Retina de 10.9 pulgadas",
+    category: "Electrónica",
+  },
+  {
+    id: 5,
+    name: "Samsung Galaxy Watch 5",
+    price: 279.99,
+    image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500",
+    description: "Smartwatch con monitoreo avanzado de salud y fitness",
+    category: "Wearables",
+  },
+  {
+    id: 6,
+    name: "Canon EOS R6",
+    price: 2499.99,
+    image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500",
+    description: "Cámara mirrorless de fotograma completo con estabilización de imagen",
+    category: "Fotografía",
+  },
+  {
+    id: 7,
+    name: "Nintendo Switch OLED",
+    price: 349.99,
+    image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=500",
+    description: "Consola híbrida con pantalla OLED de 7 pulgadas",
+    category: "Gaming",
+  },
+  {
+    id: 8,
+    name: "Kindle Paperwhite",
+    price: 139.99,
+    image: "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=500",
+    description: "Lector de libros electrónicos con pantalla antirreflejos de 6.8 pulgadas",
+    category: "Electrónica",
+  },
+];

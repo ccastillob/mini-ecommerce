@@ -1,5 +1,10 @@
 import { AppRouter } from "./presentation/router/AppRouter";
+import { CartProvider } from "./context";
 
 export const App = () => {
-  return <AppRouter />;
+  return (
+    <CartProvider>
+      <AppRouter />
+    </CartProvider>
+  );
 };
